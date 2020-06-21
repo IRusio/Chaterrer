@@ -612,3 +612,5 @@ fabric.properties
 # Ionide (cross platform F# VS Code tools) working folder
 
 .idea/
+
+.vscode
