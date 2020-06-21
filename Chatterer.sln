@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterer-server", "Chatterer-server\Chatterer-server.csproj", "{55B2A382-BAE4-4474-B891-2FA8CC5AAD5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterer-server-tests", "Chatterer-server-tests\Chatterer-server-tests.csproj", "{097FA0A9-FDD1-47E0-9708-20467FF45DC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55B2A382-BAE4-4474-B891-2FA8CC5AAD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B2A382-BAE4-4474-B891-2FA8CC5AAD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B2A382-BAE4-4474-B891-2FA8CC5AAD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B2A382-BAE4-4474-B891-2FA8CC5AAD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097FA0A9-FDD1-47E0-9708-20467FF45DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097FA0A9-FDD1-47E0-9708-20467FF45DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097FA0A9-FDD1-47E0-9708-20467FF45DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097FA0A9-FDD1-47E0-9708-20467FF45DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
