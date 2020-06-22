@@ -24,9 +24,14 @@ namespace Chatterer_server
                 {
                     ObjectId = message.Id,
                     Content = message.Content,
-                    Date = message.SendDate.ToString(CultureInfo.CurrentCulture)                    
-                }
-                );
+                    Date = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(message.SendDate)              
+                });
+        }
+
+        public override Task GetMessages(MessageRequest request, IServerStreamWriter<OutgoingMessage> responseStream, ServerCallContext context)
+        {
+                
+            return base.GetMessages(request, responseStream, context);
         }
     }
 }

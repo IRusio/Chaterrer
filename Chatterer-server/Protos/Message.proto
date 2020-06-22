@@ -2,10 +2,15 @@
 
 option csharp_namespace = "Chatterer_server";
 
+
+import "google/protobuf/timestamp.proto";
+
 package Messages;
 
 service Messages {
   rpc AddMessage(IncomingMessage) returns (OutgoingMessage);
+  rpc GetMessages(MessageRequest) returns (stream OutgoingMessage);
+
 }
 
 message IncomingMessage {
@@ -15,5 +20,10 @@ message IncomingMessage {
 message OutgoingMessage {
   string objectId = 1;
   string content = 2;
-  string date = 3;
+  google.protobuf.Timestamp date = 3;
+}
+
+message MessageRequest {
+  string lastVisibleObjectId = 1;
+  
 }
